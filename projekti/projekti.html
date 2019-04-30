@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kelarottien jutku karttajutut</title>
+    <link href="projekti.css" rel="stylesheet">
+</head>
+<aside
+<body>
+
+
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+      crossorigin=""/>
+<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+        crossorigin=""></script>
+
+<div id="mapid" style="width: 1000px; height: 750px;
+    position: relative; outline: none;
+    float: right;
+    " class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
+     tabindex="0"></div>
+
+
+<div class="container">
+    <input id="hakuteksti" type="text">
+    <button class="button buttoni" id="hakunappi">Hae</button>
+</div>
+
+<button class="button buttoni">Lisää parkki</button>
+<button class="button buttoni">Oma sijainti</button>
+
+<script src="projekti.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+img{
+    float: left;
+}
+
+body{
+    background-color: orange;
+}
+
+title{
+    border: 30px;
+}
+
+.button {
+    background-color: darkblue;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+.buttoni {border-radius: 8px;
+    padding: 20px 100px;
+    margin-bottom: 5px;
+}
+.container > div {
+    margin: 10px;
+    padding: 20px;
+
+}
+.mapid > div {
+    border: 5px solid darkblue;
+    border-radius: 5px;
+}
