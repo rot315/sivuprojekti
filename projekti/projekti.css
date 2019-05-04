@@ -29,7 +29,7 @@ title{
     padding: 20px;
 
 }
-.mapid > div {
+#mapid {
     border: 5px solid darkblue;
     border-radius: 5px;
 }
