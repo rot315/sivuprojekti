@@ -2,34 +2,50 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>kelarottien jutku karttajutut</title>
     <link href="projekti.css" rel="stylesheet">
 </head>
-<aside
-<body>
+<header>
+    <h1>Kelarottien jutku karttajutut</h1>
+</heade/*r>
+<nav>
+    <button class="nappi" id="hmmnappi" onclick="//users.metropolia.fi/~patriksn/Kuvia/tarvittavakuvamateriaali.png">About Us</button>
+    <button class="nappi" id="hmmnappi1" onclick="Taikatemppu">Juusto kartta</button>
+    <button class="nappi" id="hmmnappi2" onclick="Taikatemppu">Ohjeet </button>
+    <button class="nappi" id="hmmnappi3" onclick="Taikatemppu">Rotta reivi</button>
+</nav>
 
-
-
-<link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
-      integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
-      crossorigin=""/>
-<script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
-        integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
-        crossorigin=""></script>
-
-<div id="mapid" style="width: 1000px; height: 750px;
+<aside>
+    <div id="mapid" style="width: 70%; height: 750px;
     position: relative; outline: none;
     float: right;
     " class="leaflet-container leaflet-touch leaflet-retina leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom"
-     tabindex="0"></div>
+         tabindex="0"></div>
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.4.0/dist/leaflet.css"
+          integrity="sha512-puBpdR0798OZvTTbP4A8Ix/l+A4dHDD0DGqYW6RQ+9jxkRFclaxxQb/SJAWZfWAkuyeQUytO7+7N4QKrDh+drA=="
+          crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.4.0/dist/leaflet.js"
+            integrity="sha512-QVftwZFqvtRNi0ZyCtsznlKSWOStnDORoefr1enyq5mVL4tmKB3S/EnC3rRJcxCPavG10IcrVGSmPh6Qw5lwrg=="
+            crossorigin=""></script>
+</aside>
+<section>
+<P>nappi valikoima</P>
 
 <div class="container">
-    <input id="hakuteksti" type="text">
-    <button class="button buttoni" id="hakunappi" onclick="getLocation()">oma sijainti</button>
-    <button class="button buttoni" id="jutku nappi" onclick="jusus()">uusi sijainti</button>
+    <button class="button" id="hakunappi" onclick="getLocation()">oma sijainti</button>
+    <button class="button" id="jutku nappi" onclick="jusus()">uusi sijainti</button>
+    <button class="button" id="poisto nappi" onclick="derete">poista kaikki sijainit</button>
+</div>
+</section>
+<section>
+<div>
+    <p>HUOM. Kartan tarkoitus on avittaa sinua muistamaan parkkipaikkojen sijainti ei autaasinua navigoimaan sinne olen vammainen kelarotta ja mulla ei riitä aivo kapasiteetti selaaeiseen. jos olet tyytymätön kartan toimintaan ota yhteys kelaan.</p>
+
 </div>
 
 <script src="projekti.js"></script>
-</body>
+</section>
+<footer>
+    <p> i heard that i was promised cheese</p>
+</footer>
 </html>

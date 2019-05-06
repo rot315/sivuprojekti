@@ -3,21 +3,66 @@ img{
 }
 
 body{
-    background-color: orange;
+    background-color: white;
 }
 
 title{
     border: 30px;
 }
-
-.button {
-    background-color: darkblue;
-    border: none;
+ .nappi {
+    background-color: orange;
+    border: solid white 2px;
     color: white;
+    padding: 15px 30px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 25%;
+    float: left;
+}
 
+.nappi:hover {
+    background-color: orangered;
+}
+
+header{
+    color: orange;
+    background-color: white;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+footer{
+    background-color: orange;
+    text-align: center;
+    float: bottom;
+}
+aside{
+background-color: orange;
+}
+
+p{
+    color: white;
+    font-size: 25px;
+}
+section{
+    background-color: orange;
+
+}
+
+.button {
+    background-color: orange;
+    border: solid orange 2px;
+    color: white;
+    padding: 15px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    width: 28%;
 }
 
 .buttoni {border-radius: 8px;
@@ -25,11 +70,12 @@ title{
     margin-bottom: 5px;
 }
 .container > div {
-    margin: 10px;
-    padding: 20px;
+
 
 }
 #mapid {
     border: 5px solid darkblue;
     border-radius: 5px;
+    width: 75%;
 }
+

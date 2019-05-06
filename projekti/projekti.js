@@ -16,28 +16,25 @@ function getLocation() {
   }
   missa = prompt('sijainti');
   aika = prompt('pysäköintiaika');
-  varoitus = prompt('pysäköinti rajoituksia')
+  varo = prompt('pysäköinti rajoituksia')
  }
 
 function showPosition(position) {
   let la =  position.coords.latitude;
   let lo =  position.coords.longitude;
   let marker = L.marker([la, lo]).addTo(mymap)
-    .bindPopup(missa+" "+ aika +" - "+aika1).openPopup();
+    .bindPopup("<b> sijainti: "+ missa + "<br> Pysäköinti aika: "+ aika +"<br> Rajoitukset: "+varo+"</b>").openPopup();
 
 }
+
+
 
 function Gako(){
     var txt;
     if (confirm("lisätäänkö kuva")) {
-      var x = document.createElement("IMG");
-      x.setAttribute("src", "data:image/jpeg;base64,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");
-      x.setAttribute("width", "100");
-      x.setAttribute("height", "100");
-      x.setAttribute("alt", "gako");
-
+      kuvasi = prompt('lisää kuvan sijainti');
     } else {
-      txt = "You pressed Cancel!";
+      kuvasi = "http://users.metropolia.fi/~patriksn/Kuvia/tarvittavakuvamateriaali.png";
     }
 
 }
@@ -48,7 +45,9 @@ let lng;
 let missa;
 let aika;
 let varo;
-let gako;
+
+let marker;
+let kuvasi;
 
 
 mymap.on('click', onMapClick);
@@ -57,7 +56,6 @@ function onMapClick(e) {
   missa = prompt('sijainti');
   aika = prompt('pysäköintiaika');
   varo = prompt('pysäköinti rajoituksia');
-  gako = Gako();
   coord = e.latlng;
   lat = coord.lat;
   lng = coord.lng;
@@ -66,20 +64,12 @@ function onMapClick(e) {
 
 function jusus() {
 
-  let marker = L.marker([lat, lng]).
-      addTo(mymap).bindPopup(" Sijainti: " + missa + "\n Pysäköinti aika: " + aika + "\n Rajoitukset: " + varo + " " + gako).
-      openPopup();
+  let marker = L.marker([lat, lng])
+  .addTo(mymap).bindPopup( "<img src=\"" + kuvasi + "\" alt=\"ei kuvaa :C\" width=\"100\" height=\"100\"/><b> sijainti: "+ missa + "<br> Pysäköinti aika: "+ aika +"<br> Rajoitukset: "+varo+"</b><br><button class=\"norm\" id=\"poisto\" onclick=\"poista()\">remove</button>").openPopup();
+
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
+function poista() {
+  L.marker([lat, lng])
+      .removeLayer(marker);
+}
